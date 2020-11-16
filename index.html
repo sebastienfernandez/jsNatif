@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG JS natif</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48989da462.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>The heroe in the Darkness</h1>
+    </header>
+    <main>
+        <section id="main-section">
+            <div id="statistics" class="infos">
+                <h3>Héros : </h3>
+                <ul>
+                    <li>Santé : <p id="pv" class="colored-info"></p></li>
+                    <li>Mana : <p id="mana" class="colored-info"></p></li>
+                    <li>Puissance : <p id="atk"></p></li>
+                </ul>
+            </div>
+            <div id="pictures">
+               <img src="datas/begin.jpg" alt="ecran jeu rpg" id="picture-game">
+            </div>
+            <div id="inventory" class="infos">
+                <h3>Inventaire : </h3>
+                <ol id="list-inventory">
+
+                </ol>
+            </div>
+        </section>
+        <section id="buttons">
+            <i class="fas fa-search button" id="search"></i>
+            <i class="fas fa-arrow-up button" id="move"></i>
+            <i class="fas fa-hand-sparkles button" id="spell"></i>
+            <i class="fas fa-fist-raised button" id="fight"></i>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ce jeu vous a été codé par <a href="http://sebastienfernandez.io/">Sébastien Fernandez</a> himself</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

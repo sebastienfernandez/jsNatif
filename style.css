@@ -1,0 +1,24 @@
+h1,footer p {
+    text-align: center;
+}
+
+#main-section, #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infos {
+    width: 20%;
+}
+
+
+#picture-game {
+    width: 400px;
+    height: 500px;
+}
+
+.button {
+    cursor: pointer;
+}
