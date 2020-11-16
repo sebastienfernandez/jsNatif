@@ -11,7 +11,7 @@ const eltSpell = document.getElementById("spell");
 const eltFight = document.getElementById("fight");
 const eltUseItem = document.getElementById('list-inventory').getElementsByClassName("use-item");
 
-/********* DECLARATION DES CLASSES ET OBJETS  *************/
+/********* INSTANCIATION DES CLASSES  *************/
 
 class Heroe {
     constructor(name, health, mana, power, src, introduction) {
@@ -92,7 +92,7 @@ class Item {
 
 
 
-/********* DECLARATIONS DES VARIABLES ************/
+/********* DECLARATIONS DES VARIABLES ET OBJETS ************/
 
 let infantryKnight = new Heroe("le chevalier fantassin", 100, 40, 40, "datas/warrior.jpg", "Le chevalier de renom Théodore parcourt le royaume pour traquer et anéantir les menaces impies. Quand l'Inquisition doit employer la manière forte et au-delà, c'est à lui qu'elle fait appel...");
 let necromancerPriest = new Heroe("le prêtre nécromancien", 80, 80, 30, "datas/necromancer.png", "Zahran le nécroman a la lugubre habitude de dire à ses ennemis : 'Tout le monde finit par mourir, mais vous, en plus, vous me servirez'");
@@ -177,6 +177,8 @@ updateInventory();
 
 
 /************* AVANCE DU SCRIPT ************/
+
+// problème, rendre les objets de l'inventaire cliquables pour les utiliser
 eltUseItem.addEventListener('click', function() {
     console.log('sdf');
 });

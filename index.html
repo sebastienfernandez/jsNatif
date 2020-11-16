@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG JS natif</title>
     <link rel="stylesheet" href="style.css">
+    <!--appel des icônes fontawesome-->
     <script src="https://kit.fontawesome.com/48989da462.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,7 +14,8 @@
     </header>
     <main>
         <section id="main-section">
-            <div id="statistics" class="infos">
+            <!--partie des statistiques du héros-->
+            <div id="statistics" class="infos"> 
                 <h3>Héros : </h3>
                 <ul>
                     <li>Santé : <p id="pv" class="colored-info"></p></li>
@@ -21,9 +23,11 @@
                     <li>Puissance : <p id="atk"></p></li>
                 </ul>
             </div>
+            <!--"écran de jeu"-->
             <div id="pictures">
                <img src="datas/begin.jpg" alt="ecran jeu rpg" id="picture-game">
             </div>
+            <!--partie inventaire-->
             <div id="inventory" class="infos">
                 <h3>Inventaire : </h3>
                 <ol id="list-inventory">
@@ -31,6 +35,7 @@
                 </ol>
             </div>
         </section>
+        <!--boutons d'action-->
         <section id="buttons">
             <i class="fas fa-search button" id="search"></i>
             <i class="fas fa-arrow-up button" id="move"></i>
